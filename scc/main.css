@@ -139,7 +139,7 @@ main {
 
 .current-city {
   font-size: 38px;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0;
 }
 .current-details {
@@ -162,7 +162,7 @@ main {
 
 .current-temperature-value {
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .current-temperature-unit {
