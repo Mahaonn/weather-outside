@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="scc/main.css" />
     <title>Weather Outside App</title>
@@ -24,17 +24,21 @@
       <main>
         <div class="current-weather">
           <div>
-            <h1 class="current-city" id="current-city">Paris</h1>
+            <h1 class="current-city" id="current-city"></h1>
             <p class="current-details">
-              <span id="current-date"></span>, moderate rain <br />
-              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              <span id="current-time"></span>,
+              <span id="weather-description"></span> <br />
+              Humidity: <strong><span id="current-humidity"></span>%</strong>,
+              Wind: <strong><span id="wind-speed"></span>km/h</strong>
             </p>
           </div>
-          <div class="current-temperature">
-            <span class="current-temperature-icon">☀️</span
-            ><span class="current-temperature-value" id="current-temperature"
-              >24</span
-            ><span class="current-temperature-unit">°C</span>
+          <div class="current-temperature-container">
+            <div id="weather-icon"></div>
+            <div
+              class="current-temperature-value"
+              id="current-temperature"
+            ></div>
+            <div class="current-temperature-unit">°C</div>
           </div>
         </div>
       </main>
